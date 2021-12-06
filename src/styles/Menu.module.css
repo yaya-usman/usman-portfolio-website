@@ -1,0 +1,48 @@
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-end;
+  z-index: 999;
+  background-color: rgb(255, 253, 253);
+  transition: all 0.7s ease;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 20px;
+  flex: 1;
+  color: var(--primary-color);
+  transition: all 0.3s linear;
+  text-align: center;
+}
+
+.menu a.active,
+.menu a:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding-bottom: 30px;
+}
+
+.icons {
+  transform: scale(1.1);
+  margin-right: 5px;
+}
+
+/* darkmode theme */
+.menu.active {
+  background-color: var(--primary-color);
+}
+.menu.active a {
+  color: aliceblue;
+}
+
+.menu.active a.active,
+.menu.active a:hover {
+  background-color: var(--accent-color3);
+}

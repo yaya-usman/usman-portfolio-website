@@ -1,0 +1,156 @@
+.projectItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  width: 90%;
+}
+
+.projectItem:not(:last-child){
+  margin-bottom: 60px;
+}
+
+.thumbnail {
+  flex: .6;
+  border: 1px solid var(--accent-color1);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 370px;
+  position: relative;
+  text-align: center;
+}
+
+.thumbnail::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.thumbnail button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  background-color: transparent;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.thumbnail button i {
+  font-size: 30px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.thumbnail:hover {
+  transform: scale(1.01);
+}
+
+.thumbnail:hover button {
+  bottom: 0%;
+}
+
+.thumbnail img {
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  align-self: center;
+}
+
+.desc {
+  flex: .4;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-left: -50px;
+  z-index: 99;
+}
+
+.desc p {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(240, 236, 236);
+  line-height: 24px;
+  border-radius: 10px;
+  text-align: right;
+  padding: 15px;
+  margin: 15px 0;
+  color: var(--primary-color);
+}
+
+.desc a {
+  color: var(--primary-color);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.reverse a,
+.reverse .icons {
+  align-self: flex-start;
+}
+
+.reverse p {
+  text-align: left;
+}
+
+.reverse .desc {
+  margin-right: -50px;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icons a {
+  align-self: center;
+}
+.icons a:first-child {
+  margin-right: 20px;
+}
+
+.icons i {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.tech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tech li {
+  font-weight: 600;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.tech li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.reverse .tech {
+  align-self: flex-start;
+}
+
+/* Modal */
+/* .imgContainer{
+
+} */
+
+
+

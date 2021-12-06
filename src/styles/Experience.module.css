@@ -1,0 +1,95 @@
+/* Experience */
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 150px;
+}
+
+.leftBox {
+  flex: 0.5;
+  align-self: baseline;
+}
+
+.rightBox {
+  flex: 0.5;
+  align-self: baseline;
+}
+
+/* tabs */
+
+.tabContainer {
+  display: flex;
+  margin-top: 50px;
+  align-items: flex-start;
+}
+.tablist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 20px;
+  border-left: 3px solid var( --accent-color2);
+  
+}
+
+.tablist button {
+  padding: 20px 35px;
+  margin-left: -3px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--primary-color);
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-left: 3px solid transparent;
+  width: 100%;
+}
+.tablist button.active {
+  border-left: 3px solid var(--primary-color);
+  background-color: var(--accent-color1);
+}
+.tablist button:hover {
+  background-color: var(--accent-color1);
+}
+.tabContent {
+  align-self: stretch;
+}
+
+/* Skills */
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 20px;
+}
+.skills h4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: var(--accent-color1);
+}
+
+.skills li {
+  padding: 6px 10px 10px 0;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.frameworks,
+.languages,
+.tools,
+.design {
+  flex: 0.5;
+}
+
+.frameworks,
+.languages,
+.tools,
+.design{
+  align-self: stretch;
+}
+

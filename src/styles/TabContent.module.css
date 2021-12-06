@@ -1,0 +1,64 @@
+
+
+.timelineItem {
+  display: none;
+  flex-direction: column;
+  line-height: 24px;
+}
+
+.timelineItem.active{
+  display: flex;
+}
+
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.title a {
+  color: var(--accent-color1);
+  position: relative;
+}
+
+.title a::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  height: 1px;
+  background-color: #999;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.title a:hover::before {
+  width: 80%;
+}
+
+.date {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 0;
+  color: var(--accent-color1);
+}
+
+.responsibility {
+  color: var(--accent-color1);
+  line-height: 25px;
+margin-top: 20px;
+}
+
+
+.responsibility li {
+  position: relative;
+  padding-left: 20px;
+
+}
+.responsibility li:before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-size: 20px;
+}
