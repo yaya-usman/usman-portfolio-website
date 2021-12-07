@@ -9,7 +9,7 @@ import ToggleContext from "../contexts/ToggleContext";
 
 const Menu = () => {
   const { activeLink, setActiveLink } = useContext(MenuLinkContext);
-  const {darkMode, setDarkMode} = useContext(ToggleContext)
+  const {darkMode} = useContext(ToggleContext)
 
   
   //persist the state of the menulink on page refresh

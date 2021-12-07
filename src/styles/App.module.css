@@ -39,16 +39,21 @@ html::-webkit-scrollbar-thumb {
 body {
   font-family: "Montserrat", sans-serif;
   padding-bottom: 20px;
-  color: aqua;
 
 }
 
 .app {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+}
+
+.app.active{
+  background-color: var(--secondary-color)
+
 }
 
 .overlay {
