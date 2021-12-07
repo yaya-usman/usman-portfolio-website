@@ -68,23 +68,27 @@ function Contact() {
                 placeholder="Name"
                 className={styles.formTxt}
                 name="user_name"
+                required
               />
               <input
                 type="email"
                 placeholder="Email"
                 className={styles.formTxt}
                 name="user_email"
+                required
               />
               <input
                 type="text"
                 placeholder="Subject"
                 className={styles.formTxt}
                 name="user_subject"
+                required
               />
               <textarea
                 placeholder="Message"
                 className={styles.formTxtArea}
                 name="message"
+                required
               ></textarea>
               <Button btnText="Send Message" />
             </form>
