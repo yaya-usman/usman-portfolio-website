@@ -14,8 +14,8 @@
   flex: .6;
   border: 1px solid var(--accent-color1);
   border-radius: 10px;
+  display: flex;
   overflow: hidden;
-  height: 370px;
   position: relative;
   text-align: center;
 }
@@ -59,9 +59,10 @@
 
 .thumbnail img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   cursor: pointer;
-  align-self: center;
+  align-self: stretch;
+
 }
 
 .desc {

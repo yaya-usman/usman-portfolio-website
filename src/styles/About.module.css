@@ -3,7 +3,7 @@
   padding: 50px 30px;
   flex-direction: column;
   gap: 40px;
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 60px);
 }
 
 .imgContainer {
@@ -47,8 +47,7 @@ h3 {
   width: 75%;
   line-height: 26px;
   margin: 30px 0;
-  color: var(--accent-color1);
-  /* color: var(--primary-color); */
+  color: var(--primary-color);
   text-transform: none;
 }
 

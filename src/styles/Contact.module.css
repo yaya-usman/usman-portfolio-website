@@ -2,7 +2,7 @@
   display: flex;
   padding: 70px 30px;
   flex-direction: column;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 60px);
 }
 
 .contact div:first-child {
@@ -34,20 +34,21 @@
   flex: 0.5;
   height: 100%;
   width: 100%;
-  padding: 9px;
+  padding: 6px;
 
 }
 
 .mapContainer {
   width: 100%;
-  height: 70vh;
+  height: 68vh;
   
 }
 
 .right {
   flex: 0.5;
   height: 100%;
-  padding: 20px;
+  padding: 10px 20px;
+  margin-top: -10px;
 }
 
 .right h3 {
@@ -57,7 +58,7 @@
 
 .right p {
   color: var(--accent-color1);
-  margin: 20px 0;
+  margin: 10px 0 25px 0 ;
   text-transform: none;
   text-align: center;
 }
@@ -102,6 +103,15 @@
 
 .form button {
   align-self: flex-start;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row input:first-child{
+  margin-right: 8px;
 }
 
 /* MediaQueries */

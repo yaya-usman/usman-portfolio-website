@@ -1,15 +1,12 @@
-
-
 .timelineItem {
   display: none;
   flex-direction: column;
   line-height: 24px;
 }
 
-.timelineItem.active{
+.timelineItem.active {
   display: flex;
 }
-
 
 .title {
   font-size: 20px;
@@ -37,7 +34,7 @@
 }
 
 .date {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   margin: 10px 0;
   color: var(--accent-color1);
@@ -46,14 +43,13 @@
 .responsibility {
   color: var(--accent-color1);
   line-height: 25px;
-margin-top: 20px;
+  margin-top: 20px;
 }
-
 
 .responsibility li {
   position: relative;
   padding-left: 20px;
-
+  color: var(--primary-color);
 }
 .responsibility li:before {
   content: "▹";

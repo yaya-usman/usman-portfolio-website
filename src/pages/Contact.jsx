@@ -63,20 +63,23 @@ function Contact() {
             </p>
 
             <form ref={formRef} onSubmit={handleSubmit} className={styles.form}>
-              <input
-                type="text"
-                placeholder="Name"
-                className={styles.formTxt}
-                name="user_name"
-                required
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className={styles.formTxt}
-                name="user_email"
-                required
-              />
+              <div className={styles.row}>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className={styles.formTxt}
+                  name="user_name"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className={styles.formTxt}
+                  name="user_email"
+                  required
+                />
+              </div>
+
               <input
                 type="text"
                 placeholder="Subject"
